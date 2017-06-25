@@ -1,0 +1,17 @@
+name: Brodcaster
+description: Uses the /title command to display a welcome message
+author: Atomization
+main: atomization\Brodcaster\Main
+version: 1.0.0
+api: 3.0.0
+commands: 
+ setjoinmessage:
+  description: "Broadcasts message you input."
+  permission: joinmsg.set
+permissions:
+ brodcast:
+  default: op
+  children:
+   joinmsg.set:
+    default: op
+    description: Allows you to set join message message.
