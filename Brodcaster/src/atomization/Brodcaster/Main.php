@@ -41,7 +41,7 @@ class Main extends PluginBase implements Listener {
         
         switch($command->getName()){ 
 
-            case "brodcast":
+            case "broadcast":
                 $sender->getServer()->broadcastMessage(TextFormat::WHITE."".implode(" ", $args));
             return true;
         }
